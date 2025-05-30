@@ -2,26 +2,6 @@
 
 This repository contains our submission and experiments for the CLEF 2025 CheckThat! Lab, **Subtask 4b – Scientific Claim Source Retrieval**, which involves retrieving the correct scientific paper referenced implicitly in a tweet.
 
-## Repository Structure
-
-```
-.
-├── Neural_Representation_Learning_Approach/   # Sentence embedding + fine-tuning code
-├── Traditional_IR/                            # BM25 and sparse retrieval scripts
-├── getting_started_subtask4b.ipynb            # Official starter notebook
-├── Neural_Ranking.ipynb                       # Main training & evaluation pipeline
-├── predictions.tsv                            # Final predictions (full)
-├── predictions_dev.tsv                        # Dev-set predictions
-├── predictions_train.tsv                      # Train-set predictions
-├── predictions.zip                            # Archived prediction files
-├── submission.tsv                             # Final submission file (top 5 per tweet)
-├── subtask4b_collection_data.pkl              # Paper metadata (CORD-19)
-├── subtask4b_query_tweets_train.tsv           # Training tweets
-├── subtask4b_query_tweets_dev.tsv             # Dev tweets
-├── subtask4b_query_tweets_test.tsv            # Test tweets
-├── README.md                                  # Project documentation
-```
-
 ## Task Overview
 
 Given a tweet that implicitly references a scientific publication, the goal is to retrieve the correct paper from a candidate pool derived from the CORD-19 dataset. This is framed as a document retrieval task evaluated using **MRR@5**.
